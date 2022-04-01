@@ -1,0 +1,48 @@
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 168, 123);
+    color: whitesmoke
+}
+.filmAyrinti{
+    
+    margin-bottom: 50px;
+    display: flex;
+    color:black;
+    font-size: larger;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(19, 112, 199);
+    text-align: center;
+    
+}
+.kunyeAfis{
+margin-top: 10px;
+height: 300px;
+justify-content: space-around;
+display: flex;
+flex-direction: row;
+height: auto;
+color: black;
+/* position: relative; */
+}
+.kunye{
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    width: 50%;
+    height: 300px;
+    border: 2px solid rgb(241, 11, 11);
+
+}
+.afis{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    border: 2px solid rgb(240, 11, 11);
+    position: relative;
+}
+.card-img-top:hover{
+    cursor: pointer;
+}
