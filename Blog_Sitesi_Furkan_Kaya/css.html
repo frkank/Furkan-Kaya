@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="baslik" id="basligim">
+        <div id="logo">
+            <h1>Furkan KAYA</h1>
+        </div>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" class="git">Anasayfa</a></li>
+                    <li><a href="index.html" class="git">HTML</a></li>
+                    <li><a href="#" class="git">CSS</a></li>
+                    <li><a href="index.html#bootstrap" class="git">BOOTSTRAP</a></li>
+                    <li><a href="index.html#jscript" class="git">JAVASCRİPT</a></li>
+                    <li><a href="index.html#jquery" class="git">JQUERY</a></li>
+                    <li><a href="index.html#hakkimda" class="git">HAKKIMDA</a></li>
+                    <li><a href="index.html#iletisim" class="git">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="dersler" >
+        <div class="ders" id="html">
+            <div class="dersBasligi">
+                <h3>CSS</h3>
+            </div>
+            <div class="dersIcerigi">
+                <p>CSS'in açılımı Cascading Style Sheet'tir. Html ile hazırlanmış içeriklere stil vermek amacıyla kullanılmaktadır. Bu bağlamda Html sayfasında link yardımıyla Css çağrılmalıdır. Bu işlem için 'link:css' kısayolu ile link çağrılır ve 'href' kısmına css dosyasına verilen dosya adı yazılmalıdır. </p><br><br>
+                <p>CSS ilk olarak akla programlama dili gibiymiş gelse de aslında işaretleme dilidir.</p><br><br>
+                <p>CSS ile stil verilirken öncehangi 'html' ögesine stil verileceği belirlenir yani seçilir. Daha sanrasında açılan scope'un içine istenilen özellik ve değerler girilir. Buradaki öğeler footer, header, section vb. gibi html etiketleri ise direkt olarak isimleriyle seçilir. Tanımlanan class çağıralacaksa class isminin önüne nokta('.') konularak seçilir. Aynı şekilde bu işlem id için yapılırsa, id isminin önüne diez('#') konularak ilgli öge seçilir.</p><br><br>
+                <p>CSS stilleme yapılırken oldukça geniş seçenek sunmaktadır. Arka plan renklendirme, yazı tipi ve boyutu özelliştirme, genişlik, yükseklik, sayfaya yerleşim gibi özellikler bu seçeneklerden sıkça kullanılanlarıdır. CSS bu özelliklerin yanı sıra bir çok özelliği bünyesinde barındırır</p><br><br>
+                <p>Bu seçme ve değer değiştirme işlemine biraz örnek verelim;</p><br>
+                <p>footer{background-color: red} bu örnekte html ile oluşturulan footer bölümüne arka plan rengi olarak kırmızı değeri girilmiştir. 'Footer' yazarak ilgili ögeyi seçilmiş olunur daha sonrasında açılan scope içindeki 'background-color' ile hangi özelliğe stil verileceği belirlenmiştir. Son olarak 'red' ile özelliğe verilen değer girilir.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#anaSayfa").addClass("gitAktif")            
+            $(".git").click(function () {
+                $(".git").removeClass("gitAktif")
+                $(this).addClass("gitAktif")                
+            })
+        })
+    </script>
+</body>
+
+</html>

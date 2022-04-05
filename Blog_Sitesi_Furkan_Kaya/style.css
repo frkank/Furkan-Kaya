@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url("https://wallpaperaccess.com/full/6927854.jpg");
+    background-position:center;
+    background-attachment: fixed;
+
+}
+.baslik{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(8, 114, 128);
+    padding: 10px 30px;
+    /* opacity: 0.5; */
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  /* .sticky + .content {
+    padding-top: 0px;
+  } */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 5px;
+    width: 25%;
+    height: auto;
+}
+#logo h1{
+    font-size:25px;
+    color:white;
+}
+#menu{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+#menu ul{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    list-style-type: none;
+}
+#menu ul li{
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.git{
+    text-decoration: none;
+    /* color:white; */
+    font-weight: bold;   
+    font-size: 14px;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+/* .btnAnasayfa{
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+
+} */
+/* .btnAnasayfa:hover{
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+
+} */
+.git:hover{
+    background-color: rgb(31, 29, 29);
+    border-radius: 5px;
+}
+.gitAktif{
+    background-color: red;
+    color: white;
+}
+/* .dersler{
+    display: inline-block;
+} */
+
+.dersBasligi{
+    margin-left: 150px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    width: 1000px;
+    text-align: center;
+    /* justify-content: center; */
+}
+.dersIcerigi{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
