@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _06_MVC_WithMVCTemplate</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">_06_MVC_WithMVCTemplate</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item" id="anaSayfa">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+                        </li>
+                        <li class="nav-item" id="hakkimda">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Aboutme" asp-action="Index">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Contact" asp-action="Index">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - _06_MVC_WithMVCTemplate - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $("#anaSayfa").addClass("gitAktif")/*Sayfa yüklendiğinde anaSayfa id'li linkin sınıfı site.css oluşturduğum gitAktif sınıfına dönüşüyor.*/
+            $(".nav-item").click(function () {/*Site ilk yüklendiğinde anasayfa açıldığından yukarıda belirtilen işlemi yapıldı.*/
+                /*Diğer linklerimizin class'ı da nav-item olduğu için herhangi birine tıklanıldığında uygulanmak üzere*/
+                /*Yazılan fonksiyonda gitAktif class'ı kaldırılıp sadece o andaki tıklanılan (seçilen) linke eklenmesi istenmektedir.*/
+                $(".nav-item").removeClass("gitAktif")
+                $(this).addClass("gitAktif")
+                /*Click işlemi yapıldığı anda kurulan mantık doğru bir şekilde çalışıyor.*/
+                /*Ancak sayfa yenilendiğinde tekrar başa döndüğünden istenilen sonuç elde edilemedi*/
+                /*View dosyasındaki ilgili dosyaların Index.cshtml'lerine, sorunun düzelmesi umuduyla*/
+                /*gitAktif sınıfının hazırlandığı site.css linkleri eklense de sorun düzelmedi.*/
+
+                /*$("#anaSayfa").removeClass("gitAktif")*/
+            })
+        })
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
