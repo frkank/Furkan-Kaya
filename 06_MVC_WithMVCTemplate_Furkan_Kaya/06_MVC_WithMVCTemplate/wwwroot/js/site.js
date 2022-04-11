@@ -2,4 +2,11 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-alert("selam");
+$(document).ready(function(){
+    $("li a").each(function () {
+        
+        if ($(this).attr("href") == window.location.pathname) {
+            $(this).css("background-color","red")
+        }
+    })
+})
