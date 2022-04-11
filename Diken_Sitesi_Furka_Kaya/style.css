@@ -124,6 +124,8 @@ h4{
 }
 .kavala{
     width: 319px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    margin-bottom: 15px;
 }
 .kavala a{
     text-decoration: none;
@@ -133,6 +135,7 @@ h4{
     font-size: 19px;
     font-weight: bold;
     margin-top: 22px;
+    
 }
 .kavala a p:hover{
     color: orange;
