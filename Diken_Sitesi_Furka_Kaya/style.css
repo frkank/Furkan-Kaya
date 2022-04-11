@@ -73,10 +73,8 @@ main{
 .solTaraf{
     width: 778px;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     border-right: 1px solid rgb(204, 199, 199);
-    /* background-color: rgba(226, 221, 221, 0.39); */
 }
 .solUst{
     width: 778px;
@@ -106,7 +104,6 @@ main{
 .follow{
     width: 319px;
     height: 86px;
-    /* background-color: red; */
 }
 h4{
     font-size: 20px;
@@ -122,7 +119,6 @@ h4{
     justify-content: center;
     width: 359px;
     height: 283px;
-    /* background-color: rebeccapurple; */
     padding-top: 20px;
     border-bottom: 1px solid rgb(204, 199, 199);
 }
@@ -147,7 +143,6 @@ h4{
     justify-content: center;
     width: 359px;
     margin-left: 20px;
-    /* background-color: aquamarine; */
 }
 .agora{
     width: 319px;
@@ -202,24 +197,18 @@ h4{
     display: flex;
     height: 3650px;
     border-bottom: 1px solid rgb(204, 199, 199);
-    /* justify-content: center; */
     flex-direction: row;
 }
 .solSol{
     width: 388.5px;
     padding: 20px 20px 0px 20px;
     border-right: 1px solid rgb(204, 199, 199);
-
-    /* background-color: aquamarine; */
 }
 .solSag{
     width: 388.5px;
     padding: 20px 20px 0px 20px;
-    /* border-right: 1px solid rgb(204, 199, 199); */
-    /* background-color: maroon; */
 }
 .solIkiCard{
-    /* height: 270px; */
     margin-top: 10px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgb(204, 199, 199);
@@ -238,15 +227,12 @@ h4{
 }
 .solUc{
     display: flex;
-    /* height: 3650px; */
-    /* border-bottom: 1px solid rgb(204, 199, 199); */
     justify-content: center;
     flex-direction: row;
     padding-top: 30px;
 }
 .solUcIcerik{
     width: 737px;
-    /* background-color: blue; */
 }
 .solUcCard{
     display: flex;
@@ -255,7 +241,6 @@ h4{
     height: 243px;
     border-bottom: 1px solid rgb(204, 199, 199);
     margin-top: 10px;
-    /* background-color: maroon; */
 }
 .cardFoto{
     width: 372px;
@@ -322,7 +307,7 @@ footer{
 .icons{
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
     margin-top: 40px;
     width: 140px;
     margin-left: 5px;
