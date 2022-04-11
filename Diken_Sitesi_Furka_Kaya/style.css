@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(226, 221, 221, 0.39);
+}
+nav{
+    height: 61px;
+    border-top: 1px solid rgb(204, 199, 199);
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.navbar{
+    padding: 0px;
+}
+.container-fluid{
+    padding: 0px;
+    height: 100%;
+}
+.collapse{
+    height: 100%;
+}
+.anaMenu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: space-between; */
+}
+.menuHeader{
+    width: auto;
+    height: auto;
+    padding: 15px 16px 15px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border-left:1px solid rgb(204, 199, 199);
+    border-right:1px solid rgb(204, 199, 199);
+    text-decoration: none;
+    
+}
+.menuHeader:hover{
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(204, 199, 199);
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 1138px;
+    background-color: white;
+}
+.anaBolum{
+    display: flex;
+    flex-direction: row;
+    width: 1138px;
+    background-color: white;
+}
+.solTaraf{
+    width: 778px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-right: 1px solid rgb(204, 199, 199);
+    /* background-color: rgba(226, 221, 221, 0.39); */
+}
+.solUst{
+    width: 778px;
+    height: 547px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    border-right: 1px solid rgb(204, 199, 199);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(226, 221, 221, 0.39);
+
+}
+.solTaraf #carouselExampleIndicators{
+    margin-top: 20px;
+    width: 737px;
+    height: 416px;
+}
+.sagTaraf{
+    width: 359px;
+}
+.sagBas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 127px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.follow{
+    width: 319px;
+    height: 86px;
+    /* background-color: red; */
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(175, 172, 172, 0.39);
+    padding: 6px 0px 6px 3px;
+}
+.follow a{
+    margin-right: 4px;
+}
+.sagIki{
+    display: flex;
+    justify-content: center;
+    width: 359px;
+    height: 283px;
+    /* background-color: rebeccapurple; */
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.kavala{
+    width: 319px;
+}
+.kavala a{
+    text-decoration: none;
+    color: black;
+}
+.kavala a p{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+.kavala a p:hover{
+    color: orange;
+}
+.sagUc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 359px;
+    margin-left: 20px;
+    /* background-color: aquamarine; */
+}
+.agora{
+    width: 319px;
+    padding-top: 20px;
+}
+.agoraCard{
+    display: flex;
+    width: 319px;
+    height: 132px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    margin-bottom: 10px;
+
+}
+.aIcerik a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.aIcerik a:hover{
+    color: orange;
+}
+.aResim{
+    margin:0px 20px 20px 0px;
+}
+.sagDort{
+    width: 359px;
+    display: flex;
+    justify-content: center;
+}
+.gununOnbiri{
+    width: 319px;
+}
+.onbiriCard{
+    width: 319px;
+    height: 87px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.onbiriCard a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.onbiriCard a:hover{
+    color: orange;
+}
+.solIki{
+    display: flex;
+    height: 3650px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    /* justify-content: center; */
+    flex-direction: row;
+}
+.solSol{
+    width: 388.5px;
+    padding: 20px 20px 0px 20px;
+    border-right: 1px solid rgb(204, 199, 199);
+
+    /* background-color: aquamarine; */
+}
+.solSag{
+    width: 388.5px;
+    padding: 20px 20px 0px 20px;
+    /* border-right: 1px solid rgb(204, 199, 199); */
+    /* background-color: maroon; */
+}
+.solIkiCard{
+    /* height: 270px; */
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.cardYazi{
+    text-decoration: none;
+    color: black;
+}
+.cardYazi p{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px;
+}
+.cardYazi p:hover{
+    color: orange;
+}
+.solUc{
+    display: flex;
+    /* height: 3650px; */
+    /* border-bottom: 1px solid rgb(204, 199, 199); */
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.solUcIcerik{
+    width: 737px;
+    /* background-color: blue; */
+}
+.solUcCard{
+    display: flex;
+    flex-direction: row;
+    width: 737px;
+    height: 243px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    margin-top: 10px;
+    /* background-color: maroon; */
+}
+.cardFoto{
+    width: 372px;
+    height: 203px;
+}
+.cardYazilar{
+    margin-left: 10px; 
+}
+.cardYazilar a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px;
+}
+.cardYazilar a:hover{
+    color: orange;
+}
+.solDortCard{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    margin-top: 10px;
+}
+.cardDortFoto{
+    width: 174px;
+    height: 173px;
+}
+.siyahAlan{
+    display: flex;
+    flex-direction: row;
+    width: 1138px;
+    height: 470px;
+    margin-top: 25px;
+    background-color: black;
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+.siyahAlan ul{
+    list-style-type: none;
+    margin-top: 40px;
+}
+.siyahAlan ul li{
+    width: 150px;
+    margin-bottom: 5px;
+}
+.siyahAlan ul li a{
+ text-decoration: none;
+ color: white;
+ font-size: 17px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+ font-weight: bold;   
+}
+.siyahAlan ul li a:hover{
+    color: orange;
+}
+footer{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    padding: 40px 20px;
+    height: 126.5px;
+    color: rgb(204, 199, 199);
+}
+.icons{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 140px;
+    margin-left: 5px;
+    height: 144px;
+    /* background-color: red; */
+}
+.icons a{
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgb(204, 199, 199);
+}
+.icons a:hover{
+    background-color: gray;
+}
