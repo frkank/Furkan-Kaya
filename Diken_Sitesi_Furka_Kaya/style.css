@@ -16,6 +16,9 @@ nav{
 .navbar{
     padding: 0px;
 }
+.navbar-toggler{
+    z-index: 1;
+}
 .container-fluid{
     padding: 0px;
     height: 100%;
