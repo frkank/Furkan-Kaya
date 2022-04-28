@@ -2,13 +2,13 @@
 @{
     ViewData["Title"] = "Detail";
 }
-
 <h4>Details of @Model.CategoryName</h4>
+<hr>
 <div class="row">
     <div class="col-6">
-        <p>Category ID: @Model.CategoryId</p><br><br>
-        <p>Category Name: @Model.CategoryName</p><br><br>
-        <p>Category Description: @Model.CategoryDescription</p><br>
+        <p class="detail">Category's ID: @Model.CategoryId</p>
+        <p class="detail">Category's Name: @Model.CategoryName</p>
+        <p class="detail">Category's Description: @Model.CategoryDescription</p><br>
         <a asp-action="Index" class="btn btn-info">Go Back Categories</a>
     </div>
 </div>

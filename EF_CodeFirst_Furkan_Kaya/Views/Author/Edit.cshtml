@@ -1,0 +1,18 @@
+@model EF_CodeFirst.Models.Author
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4>Edit Author</h4>
+<hr>
+<form asp-action="Edit" class="form-label">
+    <label class="editLabel">ID:</label>
+    <label asp-for="AuthorId" class="editLabel">@Model.AuthorId</label><br>
+    <input type="hidden" asp-for="AuthorId" class="editInput">
+    <label class="editLabel">Author Name:</label>
+    <input type="text" asp-for="AuthorName" class="editInput"><br>
+    <label class="editLabel">Author Surname:</label>
+    <input type="text" asp-for="AuthorSurname" class="editInput"><br>
+    <label class="editLabel">Date of Birth:</label>
+    <input type="text" asp-for="AuthorDateOfBirth" class="editInput"><br>
+    <input type="submit" value="Save Changes" class="editButton">
+</form>

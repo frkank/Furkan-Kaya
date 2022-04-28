@@ -2,3 +2,14 @@
 @{
     ViewData["Title"] = "Detail";
 }
+<h4>Details of @Model.AuthorName @Model.AuthorSurname</h4>
+<hr>
+<div class="row">
+    <div class="col-6">
+        <p class="detail">Author's ID: @Model.AuthorId</p>
+        <p class="detail">Author's Name: @Model.AuthorName</p>
+        <p class="detail">Author's Surname: @Model.AuthorSurname</p>
+        <p class="detail">Date of birth: @Model.AuthorDateOfBirth.ToString("dd/MM/yyyy")</p><br>
+        <a asp-action="Index" class="btn btn-info">Go Back Authors</a>
+    </div>
+</div>

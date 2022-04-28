@@ -2,14 +2,14 @@
 @{
     ViewData["Title"] = "Detail";
 }
-
 <h4>Details of @Model.PublisherName</h4>
+<hr>
 <div class="row">
-    <div class="col-sm-6">
-        <h6>Publisher ID: @Model.PublisherId</h6><br>
-        <h6>Publisher Name: @Model.PublisherName</h6><br>
-        <h6>Publisher City: @Model.PublisherCity</h6><br>
-        <h6>Publisher Mail: @Model.PublisherMail</h6><br>
-        <a asp-action="Index" class="btn btn-danger">Go Back Publisher List</a>
+    <div class="col-6">
+        <p class="detail">Publisher's ID: @Model.PublisherId</p>
+        <p class="detail">Publisher's Name: @Model.PublisherName</p>
+        <p class="detail">Publisher's City: @Model.PublisherCity</p>
+        <p class="detail">Publisher's Mail: @Model.PublisherMail</p><br>
+        <a asp-action="Index" class="btn btn-info">Go Back Publishers</a>
     </div>
 </div>

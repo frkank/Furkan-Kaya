@@ -23,7 +23,37 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-
+h4{
+  color: rgb(85, 85, 131);
+  background-color: #464e5744;
+  border-radius: 5px;
+  text-shadow: #0366d6;
+  font-style: italic;
+  padding-left: 4px;
+}
+.detail{
+  color: grey;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+.editButton{
+  background-color: #c4c112;
+  color: white;
+  border-radius: 4px;
+}
+.editLabel{
+  color: black;
+  font-family: sans-serif;
+  font-weight:500;
+  font-size: larger;
+}
+.editInput{
+  color: grey;
+  font-family: sans-serif;
+  font-weight:300;
+  font-size:large;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

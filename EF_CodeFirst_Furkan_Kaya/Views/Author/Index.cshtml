@@ -2,17 +2,18 @@
 @{
     ViewData["Title"] = "Author";
 }
-<h5>Authors</h5>
+<h5 class="display-5 bg-secondary w-100 p-3 text-white">AUTHORS</h5>
 <hr>
-<a asp-action="Create" class="btn btn-info">Create New Author</a>
-<a asp-action="GetDeletedAuthors" class="btn btn-info">Deleted Authors</a>
+<a asp-action="Create" class="btn btn-primary">Create New Author</a>
+<a asp-action="GetDeletedAuthors" class="btn btn-primary">Deleted Authors</a>
 <hr>
 <table class="table table-sm table-dark w-50">
-    <thead>
+    <thead class="bg-primary">
         <tr>
-            <td>ID</td>
-            <td>Author's Name</td>
-            <td>Author's Date of Birth</td>
+            <th>ID</th>
+            <th>Author's Name</th>
+            <th>Author's Date of Birth</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
