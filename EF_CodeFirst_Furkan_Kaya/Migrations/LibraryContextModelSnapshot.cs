@@ -19,7 +19,7 @@ namespace EF_CodeFirst.Migrations
                 .HasAnnotation("ProductVersion", "5.0.16")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Author", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Author", b =>
                 {
                     b.Property<int>("AuthorId")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace EF_CodeFirst.Migrations
                     b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Book", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Book", b =>
                 {
                     b.Property<int>("BookId")
                         .ValueGeneratedOnAdd()
@@ -88,7 +88,7 @@ namespace EF_CodeFirst.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Category", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -109,7 +109,7 @@ namespace EF_CodeFirst.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Publisher", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Publisher", b =>
                 {
                     b.Property<int>("PublisherId")
                         .ValueGeneratedOnAdd()
@@ -133,21 +133,21 @@ namespace EF_CodeFirst.Migrations
                     b.ToTable("Publishers");
                 });
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Book", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Book", b =>
                 {
-                    b.HasOne("EF_CodeFirst.Models.Entities.Author", "Author")
+                    b.HasOne("EF_CodeFirst.Models.Author", "Author")
                         .WithMany()
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EF_CodeFirst.Models.Entities.Category", "Category")
+                    b.HasOne("EF_CodeFirst.Models.Category", "Category")
                         .WithMany("Books")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EF_CodeFirst.Models.Entities.Publisher", "Publisher")
+                    b.HasOne("EF_CodeFirst.Models.Publisher", "Publisher")
                         .WithMany()
                         .HasForeignKey("PublisherId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -160,7 +160,7 @@ namespace EF_CodeFirst.Migrations
                     b.Navigation("Publisher");
                 });
 
-            modelBuilder.Entity("EF_CodeFirst.Models.Entities.Category", b =>
+            modelBuilder.Entity("EF_CodeFirst.Models.Category", b =>
                 {
                     b.Navigation("Books");
                 });

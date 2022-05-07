@@ -1,0 +1,28 @@
+@model EF_CodeFirst.Models.Book
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4>Edit Book</h4>
+<hr>
+<form asp-action="Edit" class="form-label">
+    <label class="editLabel">ID:</label>
+    <label asp-for="BookId" class="editLabel">@Model.BookId</label><br>
+    <input type="hidden" asp-for="BookId" class="editInput">
+    <label class="editLabel">Book's Name:</label>
+    <input type="text" asp-for="BookName" class="editInput"><br>
+    <label class="editLabel">Year of Publication</label>
+    <input type="text" asp-for="BookYearOfPublication" class="editInput"><br>
+    <label class="editLabel">Edition Number:</label>
+    <input type="text" asp-for="BookEditionNumber" class="editInput"><br>
+    <label class="editLabel">Number of Pages:</label>
+    <input type="text" asp-for="BookNumberOfPages" class="editInput"><br>
+    <label class="editLabel">Quantity:</label>
+    <input type="text" asp-for="BookQuantity" class="editInput"><br>
+    <label class="editLabel">Category:</label>
+    <select asp-for="CategoryId" asp-items="ViewBag.CategoryId" class="form-select form-control"></select><br>
+    <label class="editLabel">Author:</label>
+    <select asp-for="AuthorId" asp-items="ViewBag.AuthorId" class="form-select form-control"></select><br>
+    <label class="editLabel">Publisher:</label>
+    <select asp-for="PublisherId" asp-items="ViewBag.PublisherId" class="form-select form-control"></select><br>
+    <input type="submit" value="Save Changes" class="editButton">
+</form>

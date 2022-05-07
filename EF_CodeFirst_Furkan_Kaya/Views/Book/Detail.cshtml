@@ -1,0 +1,20 @@
+@model EF_CodeFirst.Models.Book
+@{
+    ViewData["Title"] = "Detail";
+}
+<h4>Details of @Model.BookName</h4>
+<hr>
+<div class="row">
+    <div class="col-6">
+        <p class="detail">Book ID: @Model.BookId</p>
+        <p class="detail">Book Name: @Model.BookName</p>
+        <p class="detail">Year of Publication: @Model.BookYearOfPublication</p>
+        <p class="detail">Edition Number: @Model.BookEditionNumber</p>
+        <p class="detail">Number of Pages: @Model.BookNumberOfPages</p>
+        <p class="detail">Quantity: @Model.BookQuantity </p>
+        <p class="detail">Book's Category: @Model.Category.CategoryName</p>
+        <p class="detail">Book's Author: @Model.Author.AuthorFullName</p>
+        <p class="detail">Book's Publisher: @Model.Publisher.PublisherName</p>
+        <a asp-action="Index" class="btn btn-info">Go Back Authors</a>
+    </div>
+</div>

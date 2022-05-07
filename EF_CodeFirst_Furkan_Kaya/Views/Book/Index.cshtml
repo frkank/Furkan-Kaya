@@ -1,0 +1,37 @@
+@model List<EF_CodeFirst.Models.Book>
+
+@{
+    ViewData["Title"] = "Book";
+}
+<h5 class="display-5 bg-secondary w-100 p-3 text-white">BOOKS</h5>
+<hr>
+<a asp-action="Create" class="btn btn-primary">Create New Book</a>
+<a asp-action="GetDeletedBooks" class="btn btn-primary">Deleted Books</a>
+<hr>
+<table class="table table-sm table-dark w-50">
+    <thead class="bg-primary">
+        <tr>
+            <th>ID</th>
+            <th>Book's Name</th>
+            <th>Book's Author</th>
+            <th>Book's Category</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+        <tr>
+            <td>@book.BookId</td>
+            <td>@book.BookName</td>
+            <td>@book.AuthorId</td>
+            <td>@book.CategoryId</td>
+            <td>
+                <a asp-action="Detail" asp-route-id="@book.BookId" class="btn btn-sm btn-primary">Details</a>
+                <a asp-action="Edit" asp-route-id="@book.BookId" class="btn btn-sm btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id="@book.BookId" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

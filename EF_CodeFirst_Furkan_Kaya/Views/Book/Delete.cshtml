@@ -1,0 +1,14 @@
+@model EF_CodeFirst.Models.Book
+@{
+    ViewData["Title"] = "Delete";
+}
+<h5>Delete Category</h5>
+<hr>
+Book Id: @Model.BookId
+<br>
+Book's Name: @Model.BookName
+<br>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="BookId">
+    <input type="submit" class="btn btn-danger" value="Delete">
+</form>
