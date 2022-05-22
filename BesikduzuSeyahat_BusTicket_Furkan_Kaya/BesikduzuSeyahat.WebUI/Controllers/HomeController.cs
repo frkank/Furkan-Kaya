@@ -54,6 +54,21 @@ namespace BesikduzuSeyahat.WebUI.Controllers
 
 
         }
-
+        public IActionResult History()
+        {
+            return View();
+        }
+        public IActionResult BoardMembers()
+        {
+            return View();
+        }
+        public IActionResult Treats()
+        {
+            return View();
+        }
+        public IActionResult ServiceCenter()
+        {
+            return View();
+        }
     }
 }

@@ -39,8 +39,8 @@
                                 Kurumsal
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
-                                <li><a class="dropdown-item" href="#">Yönetim Kurulu</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="History">Tarihçe</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="BoardMembers">Yönetim Kurulu</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -49,8 +49,8 @@
                                 Hizmetlerimiz
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">İkramlar</a></li>
-                                <li><a class="dropdown-item" href="#">Dinlenme Tesisleri</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="Treats">İkramlar</a></li>
+                                <li><a class="dropdown-item" asp-controller="Home" asp-action="ServiceCenter">Dinlenme Tesisleri</a></li>
                             </ul>
                         </li>
                     </ul>
