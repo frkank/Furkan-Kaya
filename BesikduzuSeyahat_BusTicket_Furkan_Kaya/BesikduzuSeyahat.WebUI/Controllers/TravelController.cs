@@ -45,13 +45,14 @@ namespace BesikduzuSeyahat.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Details(int directionId, double price, string departure, string arrival, int seatNo, string passengerMail, string passengerName, string passengerSurname)
+        public IActionResult Details(int directionId, double price, string departure, string arrival, int seatNo, string passengerMail, string passengerTel, string passengerName, string passengerSurname)
         {
             var entity = new Ticket()
             {
                 PassengerName = passengerName,
                 PassengerSurname = passengerSurname,
                 PassengerMail = passengerMail,
+                PassengerTel = passengerTel,
                 Departure = departure,
                 Arrival = arrival,
                 SeatNo = seatNo,

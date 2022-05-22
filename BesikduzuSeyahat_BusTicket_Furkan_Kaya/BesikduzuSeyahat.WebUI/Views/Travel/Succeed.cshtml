@@ -1,6 +1,6 @@
 ﻿@model DirectionTicket
 
-<div class="container shadow" style="text-align:center;">
+<div class="container-sm shadow" style="text-align:center;">
     <br />
     <i class="fas fa-check-circle" style="font-size:36px; color:green;"></i><br />
     <br /><p> Sayın @Model.Ticket.PassengerName @Model.Ticket.PassengerSurname, @Model.Ticket.Departure -> @Model.Ticket.Arrival için bilet alma işleminiz başarılı.</p> <br />
@@ -8,17 +8,18 @@
     <br /><hr /><br />
     <h3>Bilet Bilgileriniz</h3><br />
     
-    <table class="table table table-bordered shadow-sm">
-        <thead>
+    <table class="table table-bordered table-responsive-sm table-info">
+        <thead class="small">
             <tr>
-                <th style="width:40px;">Bilet No</th>
-                <th style="width:200px;">Ad - Soyad</th>
-                <th style="">Mail</th>
-                <th style="width:105px;">Başlangıç</th>
-                <th style="width:105px;">Bitiş</th>
-                <th style="width:60px;">KoltukNo</th>
-                <th style="width:80px;">Fiyat</th>
-                <th style="width:200px;">Tarih - Saat</th>
+                <th>Bilet No</th>
+                <th>Ad - Soyad</th>
+                <th>Mail</th>
+                <th>Telefon No</th>
+                <th>Başlangıç</th>
+                <th>Bitiş</th>
+                <th>KoltukNo</th>
+                <th>Fiyat</th>
+                <th>Tarih - Saat</th>
                 
                 <th style="width:75px;">Sefer No</th>
 
@@ -29,6 +30,7 @@
                 <td>@Model.Ticket.TicketId</td>
                 <td>@Model.Ticket.PassengerName @Model.Ticket.PassengerSurname</td>
                 <td>@Model.Ticket.PassengerMail</td>
+                <td>@Model.Ticket.PassengerTel</td>
                 <td>@Model.Ticket.Departure</td>
                 <td>@Model.Ticket.Arrival</td>
                 <td>@Model.Ticket.SeatNo</td>

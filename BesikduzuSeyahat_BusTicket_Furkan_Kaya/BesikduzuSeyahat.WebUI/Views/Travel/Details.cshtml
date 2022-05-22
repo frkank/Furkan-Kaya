@@ -173,21 +173,24 @@
                     <div class="col-md-12">
                         <br /><br /><hr /><br />
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-Mail" required="required" style="width: 1000px; margin-left: 30px;">
+                            <input type="email" name="passengermail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-Mail" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="isim" class="form-control" id="" aria-describedby="" placeholder="İsim" required="required" style="width: 1000px; margin-left: 30px;">
+                            <input type="text" name="passengertel" class="form-control" id="" aria-describedby="" placeholder="Telefon Numarası" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="soyisim" class="form-control" id="" aria-describedby="" placeholder="Soyisim" required="required" style="width: 1000px;margin-left: 30px;">
+                            <input type="text" name="passengername" class="form-control" id="" aria-describedby="" placeholder="İsim" required="required">
                         </div>
                         <div class="form-group">
-                            <select name="seatNo" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Seats" required="required" style="width: 1000px; height:30px; margin-left: 30px;" required="required">
+                            <input type="text" name="passengersurname" class="form-control" id="" aria-describedby="" placeholder="Soyisim" required="required">
+                        </div>
+                        <div class="form-group">
+                            <select name="seatno" class="form-select mb-3" asp-items="@ViewBag.Seats" required="required"  required="required">
                                 <option selected disabled>Koltuk Seçiniz</option>
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger btn-lg" style="color: white;margin-left: 38px;">Bilet Al</button>
+                    <button type="submit" class="btn btn-danger btn-lg" style="color: white;">Bilet Al</button>
                     <br />
                 </div><br />
             </div>
