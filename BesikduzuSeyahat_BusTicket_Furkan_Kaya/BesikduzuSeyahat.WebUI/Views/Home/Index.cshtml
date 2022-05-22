@@ -1,0 +1,176 @@
+﻿@model DirectionTicket
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<hr>
+<div class="anaIcerik row-sm">
+    <div class="anaBilet col-4">
+        <form action="/home/index" class="form-inline"> 
+            <label for="" class="biletLabel">Kalkış</label>
+        <select name="departure" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
+            <option selected disabled></option>
+        </select>
+        <label for="" class="biletLabel">Varış</label>
+        <select name="arrival" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
+            <option></option>
+        </select>
+        <button type="submit" class="btn btn-danger btn-lg btn-block">Yolculuk Bul</button>
+        @*<label for="" class="biletLabel">Tarih</label>
+        <input type="date" name="" id="" class="biletSelect">
+        <input type="submit" value="Seferleri Göster">*@
+        </form>
+    </div>
+    <div class="slider col-8">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/image/tourismo-slider1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/tourismo-slider1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/image/tourismo-slider1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+ @if (Model.Directions != null)
+          {
+              <div class="row">
+                  @foreach (var item in @Model.Directions)
+                  {
+
+                      <div class="col-md-6">
+                          @await Html.PartialAsync("travel", item)
+                          
+                      </div>
+                  }
+              </div>
+          }
+          else
+          {
+              <div class="row">
+                  @await Html.PartialAsync("_noTravel")
+              </div>
+          }
+<div class="anaCard bg-light">
+    <h3>UĞRAK DURAKLAR</h3>
+    <div class="row row-cols-1 row-cols-sm-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/izmir1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">İZMİR</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/ankara1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ANKARA</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/trabzon1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">TRABZON</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a natural lead-in to additional
+                        content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/istanbul1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">İSTANBUL</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a natural lead-in to additional
+                        content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/bursa1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">BURSA</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a natural lead-in to additional
+                        content.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/image/kocaeli1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">KOCAELİ</h5>
+                    <p class="card-text">
+                        This is a longer card with supporting text below as a natural lead-in to additional
+                        content.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="icons container-sm row">
+    <div class="icons1 col-sm-4">
+        <img src="/image/usb1.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+    <div class="icons1 col-sm-4">
+        <img src="/image/music.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+    <div class="icons1 col-sm-4">
+        <img src="/image/energy.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+    <div class="icons1 col-sm-4">
+        <img src="/image/tv1-monitor.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+    <div class="icons1 col-sm-4">
+        <img src="/image/waiting-room.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+    <div class="icons1 col-sm-4">
+        <img src="/image/wipe.png" alt="" class="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad?  </p>
+    </div>
+</div>

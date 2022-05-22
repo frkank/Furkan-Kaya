@@ -1,0 +1,20 @@
+﻿@model Direction
+
+<div class="card mb-4 mt-3 shadow">
+    
+    <div class="card-body">
+        <a class="card-title" asp-controller="Travel" asp-action="Details" asp-route-id="@Model.DirectionId" style="text-decoration:none; font-size:24px;">@Model.Start <i class="fas fa-long-arrow-alt-right"></i> @Model.Finish</a>
+        <p class="card-text"><b style="font-size:19px;">Güzergah:</b>  @Model.Start > @Model.direction1 > @Model.direction2 > @Model.direction3 > @Model.Finish</p><br />
+
+        <p style=" font-size:24px; text-align:center;">
+            <b>@Model.Date </b>
+            - @Model.Time
+        </p>
+
+        
+    </div>
+    <div class="card-footer text-center">
+        <a asp-controller="Travel" asp-action="Details" asp-route-id="@Model.DirectionId" class="btn btn-primary btn-sm">İncele</a>
+        
+    </div>
+</div>   

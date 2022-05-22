@@ -1,0 +1,89 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.anaIcerik {
+    display: flex;
+    background-image: url("../image/arkaplanSoft.jpg");
+}
+
+.anaBilet {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    margin-right: 10px;
+    /* background-color: rgb(245, 239, 239); */
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.biletSelect {
+    margin: 10px 0px 15px 10px;
+}
+
+.biletLabel {
+    margin: 5px 0px 2px 5px;
+}
+
+.slider {
+    padding-right: 10px;
+    /* background-color: aqua; */
+}
+
+.anaCard {
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: url("/image/arkaplanSoft.jpg");
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.icons {
+    margin-left: 0px;
+    margin-top: 25px;
+    background-image: url("/image/arkaplanSoft.jpg");
+}
+
+.icons1 {
+    /* display: flex; */
+}
+
+.icon {
+    transition: 2s;
+}
+
+    .icon:hover {
+        background-color: aquamarine;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+footer {
+    background-color: rgb(172, 171, 171);
+    text-align: center;
+}
+
+.altKısım {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+    .altKısım a img {
+        transition: 1s;
+        transform: 1s;
+    }
+
+        .altKısım a img:hover {
+            background-color: aquamarine;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+        }
