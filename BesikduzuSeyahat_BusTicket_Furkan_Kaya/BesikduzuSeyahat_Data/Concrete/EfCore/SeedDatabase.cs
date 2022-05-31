@@ -75,7 +75,6 @@ namespace BesikduzuSeyahat.Data.Concrete.EfCore
         {
             new City() { CityName = "İstanbul" },
             new City() { CityName = "Ankara" },
-            new City() { CityName = "Samsun" },
             new City() { CityName = "Kocaeli" },
             new City() { CityName = "Sakarya" },
             new City() { CityName = "Samsun" },
