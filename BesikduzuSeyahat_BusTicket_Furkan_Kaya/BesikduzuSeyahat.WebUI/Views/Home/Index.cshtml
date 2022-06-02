@@ -6,19 +6,19 @@
 <hr>
 <div class="anaIcerik row-sm">
     <div class="anaBilet col-4">
-        <form action="/home/index" class="form-inline"> 
+        <form asp-controller="Home" asp-action="Index" class="form-inline">
             <label for="" class="biletLabel">Kalkış</label>
-        <select name="departure" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
-            <option selected disabled></option>
-        </select>
-        <label for="" class="biletLabel">Varış</label>
-        <select name="arrival" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
-            <option></option>
-        </select>
-        <button type="submit" class="btn btn-danger btn-lg btn-block">Yolculuk Bul</button>
-        @*<label for="" class="biletLabel">Tarih</label>
-        <input type="date" name="" id="" class="biletSelect">
-        <input type="submit" value="Seferleri Göster">*@
+            <select name="departure" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
+                <option selected disabled></option>
+            </select>
+            <label for="" class="biletLabel">Varış</label>
+            <select name="arrival" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
+                <option></option>
+            </select>
+            <button type="submit" class="btn btn-danger btn-lg btn-block">Yolculuk Bul</button>
+            @*<label for="" class="biletLabel">Tarih</label>
+                <input type="date" name="" id="" class="biletSelect">
+                <input type="submit" value="Seferleri Göster">*@
         </form>
     </div>
     <div class="slider col-8">
@@ -55,25 +55,25 @@
         </div>
     </div>
 </div>
- @if (Model.Directions != null)
-          {
-              <div class="row">
-                  @foreach (var item in @Model.Directions)
-                  {
+@if (Model.Directions != null)
+{
+    <div class="row">
+        @foreach (var item in @Model.Directions)
+        {
 
-                      <div class="col-md-6">
-                          @await Html.PartialAsync("travel", item)
-                          
-                      </div>
-                  }
-              </div>
-          }
-          else
-          {
-              <div class="row">
-                  @await Html.PartialAsync("_noTravel")
-              </div>
-          }
+            <div class="col-md-6">
+                @await Html.PartialAsync("travel", item)
+
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="row">
+        @await Html.PartialAsync("_noTravel")
+    </div>
+}
 <div class="anaCard bg-light">
     <h3>UĞRAK DURAKLAR</h3>
     <div class="row row-cols-1 row-cols-sm-3 g-4">

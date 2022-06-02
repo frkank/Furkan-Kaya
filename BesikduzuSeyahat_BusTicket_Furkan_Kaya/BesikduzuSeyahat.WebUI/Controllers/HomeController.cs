@@ -50,9 +50,6 @@ namespace BesikduzuSeyahat.WebUI.Controllers
                 ViewBag.Cities=new SelectList(cityModel.Cities, "CityId","CityName");
                 return View(cityModel);
             }
-
-
-
         }
         public IActionResult History()
         {
