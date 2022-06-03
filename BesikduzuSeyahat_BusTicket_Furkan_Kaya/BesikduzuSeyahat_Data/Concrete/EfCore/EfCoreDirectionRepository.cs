@@ -65,7 +65,7 @@ namespace BesikduzuSeyahat.Data.Concrete.EfCore
                     .Select(i => i.CityName)
                     .ToList();
                 var directions = context.Directions
-                    .FromSqlRaw($"select * from Directions where ((Start='{dprt[0]}' or direction1='{dprt[0]}' or direction2='{dprt[0]}' or direction3='{dprt[0]}' ) and (Finish='{arv[0]}' or direction3='{arv[0]}' or direction2='{arv[0]}' and direction1='{arv[0]}' )) ")
+                    .FromSqlRaw($"select * from Directions where ((Start='{dprt[0]}' or direction1='{dprt[0]}' or direction2='{dprt[0]}' or direction3='{dprt[0]}' ) and (Finish='{arv[0]}' or direction3='{arv[0]}' or direction2='{arv[0]}' or direction1='{arv[0]}' )) ")
                     .ToList();
 
                 return directions;
