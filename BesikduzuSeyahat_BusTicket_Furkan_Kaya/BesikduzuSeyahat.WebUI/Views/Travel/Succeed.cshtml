@@ -1,15 +1,16 @@
 ﻿@model DirectionTicket
 
-<div class="container-sm shadow" style="text-align:center;">
-    <br />
+<div class="row" style="text-align:center;">
+    <div class="col-sm-12">
+        <br />
     <i class="fas fa-check-circle" style="font-size:36px; color:green;"></i><br />
-    <br /><p> Sayın @Model.Ticket.PassengerName @Model.Ticket.PassengerSurname, @Model.Ticket.Departure -> @Model.Ticket.Arrival için bilet alma işleminiz başarılı.</p> <br />
+    <br /><p> Sayın @Model.Ticket.PassengerName @Model.Ticket.PassengerSurname, @Model.Ticket.Departure -> @Model.Ticket.Arrival için bilet alma işleminiz başarılı bir şekilde gerçekleştirilmiştir, iyi yolculuklar dileriz.</p> <br />
     <a asp-controller="home" asp-action="index">Ana Sayfa</a>
     <br /><hr /><br />
     <h3>Bilet Bilgileriniz</h3><br />
     
-    <table class="table table-bordered table-responsive-sm table-info">
-        <thead class="small">
+    <table class="table table-sm table-bordered table-info">
+        <thead>
             <tr>
                 <th>Bilet No</th>
                 <th>Ad - Soyad</th>
@@ -43,4 +44,5 @@
         </tbody>
     </table>
     <br />
+    </div>
 </div>

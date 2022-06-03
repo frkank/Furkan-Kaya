@@ -9,7 +9,7 @@
         <form asp-controller="Home" asp-action="Index" class="form-inline">
             <label for="" class="biletLabel">Kalkış</label>
             <select name="departure" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">
-                <option selected disabled></option>
+                <option></option>
             </select>
             <label for="" class="biletLabel">Varış</label>
             <select name="arrival" class="form-select form-select-lg mb-3" asp-items="@ViewBag.Cities">

@@ -4,11 +4,6 @@
     var Price = Model.Price;
 }
 
-
-
-
-
-
 @{
     var price = @Price;
     var price1 = @Price - 20;
@@ -87,63 +82,9 @@
                         <p style="text-align: right; font-size:26px;">@price3 ₺</p>
                         <input type="hidden" name="price" value="@price3" />
                     }
-                    @*@if ((@TempData["nereden"].ToString() == @Model.gz2) && (@TempData["nereye"].ToString() == @Model.Baslangic))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat4 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat4" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.gz2) && (@TempData["nereye"].ToString() == @Model.gz1))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat5 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat5" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.gz3) && (@TempData["nereye"].ToString() == @Model.Bitis))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat5 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat5" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.gz3) && (@TempData["nereye"].ToString() == @Model.gz2))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat5 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat5" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.gz3) && (@TempData["nereye"].ToString() == @Model.Baslangic))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat3 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat3" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.gz3) && (@TempData["nereye"].ToString() == @Model.gz1))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat4 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat4" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.Bitis) && (@TempData["nereye"].ToString() == @Model.gz2))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat3 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat3" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.Bitis) && (@TempData["nereye"].ToString() == @Model.gz3))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat5 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat4" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.Bitis) && (@TempData["nereye"].ToString() == @Model.Baslangic))
-                    {
-                        <p style="text-align: right; font-size:26px;">@Fiyat</p>
-                        <input type="hidden" name="fiyat" value="@Fiyat" />
-                    }
-                    @if ((@TempData["nereden"].ToString() == @Model.Bitis) && (@TempData["nereye"].ToString() == @Model.gz1))
-                    {
-                        <p style="text-align: right; font-size:26px;">@fiyat2 ₺</p>
-                        <input type="hidden" name="fiyat" value="@fiyat2" />
-                    }*@
-
 
                     <input type="hidden" name="departure" value="@TempData["departure"].ToString()" />
                     <input type="hidden" name="arrival" value="@TempData["arrival"].ToString()" />
-
-
-
                 </div>
 
                 <div class="row no-gutters">
