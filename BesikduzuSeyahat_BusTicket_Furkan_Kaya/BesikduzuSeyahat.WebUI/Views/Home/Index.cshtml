@@ -55,25 +55,25 @@
         </div>
     </div>
 </div>
-@if (Model.Directions != null)
-{
-    <div class="row">
-        @foreach (var item in @Model.Directions)
-        {
 
-            <div class="col-md-6">
-                @await Html.PartialAsync("travel", item)
-
-            </div>
-        }
-    </div>
-}
-else
+@if (Model.Directions == null)
 {
     <div class="row">
         @await Html.PartialAsync("_noTravel")
     </div>
 }
+else
+{
+<div class="row">
+    @foreach (var item in @Model.Directions)
+    {
+        <div class="col-md-6">
+            @await Html.PartialAsync("travel", item)
+        </div>
+    }
+</div>
+}
+
 <div class="anaCard bg-light">
     <h3>UĞRAK DURAKLAR</h3>
     <div class="row row-cols-1 row-cols-sm-3 g-4">
