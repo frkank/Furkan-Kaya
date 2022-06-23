@@ -36,7 +36,17 @@ namespace BesikduzuSeyahat.WebUI.Controllers
         {
             _directionService.Create(direction);
             ViewBag.Cities = new SelectList(_cityService.GetAll().OrderBy(i => i.CityName), "CityName", "CityName");
-            return View();
+            return RedirectToAction("DirectionList");
+        }
+        public IActionResult DeleteDirection(int directionId)
+        {
+            var direction = _directionService.GetById(directionId);
+            if (direction!=null)
+            {
+                _directionService.Delete(direction);
+            }
+
+            return RedirectToAction("DirectionList");
         }
         
     }
